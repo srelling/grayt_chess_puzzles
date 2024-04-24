@@ -34,14 +34,14 @@ do
         # Append the spoiler block to the README file
         echo "<details><summary>Solution $Id</summary>" >> README.md
         echo "" >> README.md
-        echo "![]($file)" >> README.md
+        echo "<img src=\"$file\" width=\"50%\">" >> README.md
         echo "" >> README.md
         echo "</details>" >> README.md
         echo "" >> README.md
     else
         # Append the image directly to the README file
         echo "" >> README.md
-        echo "![]($file)" >> README.md
+        echo "<img src=\"$file\" width=\"50%\">" >> README.md
         echo "" >> README.md
     fi
 
